@@ -1,7 +1,6 @@
 const IncomeForm = require("../models/IncomeForm");
 const { incomeFormGenerator } = require("../utils/income-forms/utils");
 const { normalizeGeneratedForms } = require("../utils/utils");
-const User = require("../models/User");
 
 exports.generateIncomeForms = async (req, res, next) => {
   try {
@@ -19,15 +18,14 @@ exports.generateIncomeForms = async (req, res, next) => {
       async (generatedform1040) => {
         normalizedGeneratedForms["form1040"] = generatedform1040;
 
-        // const incomeFormRecord = await IncomeForm.create({
-        //   userId,
-        //   forms: normalizedGeneratedForms,
-        // });
+        const incomeFormRecord = await IncomeForm.create({
+          userId,
+          forms: normalizedGeneratedForms,
+        });
 
         return res.status(200).json({
           success: true,
-          data: normalizedGeneratedForms,
-          // data: incomeFormRecord,
+          data: incomeFormRecord,
         });
       }
     );
