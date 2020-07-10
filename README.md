@@ -7,4 +7,5 @@
 2. Start project
 - Navigate to Project root folder: `npm run dev` 
   
-- Note: To be able to run this project you need to enter database password and your private key in the config/config.env file
+#### Note: 
+To be able to run this project you need to enter database password and your private key in the config/config.env file
