@@ -1,9 +1,9 @@
 # vartana-coding-excercise
 
 1. Install Dependencies
-  - Project root folder: `npm install`
-  - client folder: `yarn install`
+  - Navigate to Project root folder: `npm install`
+  - Navigate to client folder: `yarn install`
 
 2. Start project
-Go to Project root folder and run: `npm run dev` 
+- Navigate to Project root folder: `npm run dev` 
   
