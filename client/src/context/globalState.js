@@ -69,8 +69,7 @@ export const GlobalProvider = ({ children }) => {
     const config = {
       headers: {
         "Content-Type": "application/json",
-        "x-auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwODRlNTBiNWEyNzkzM2ViNWVhNTJkIn0sImlhdCI6MTU5NDM3OTg1NiwiZXhwIjoxNTk0NzM5ODU2fQ.4F5WFzKUrGcTtUT3C_SgBvdgZm3eo_CImFaSuxhT2hE",
+        "x-auth-token": "",
       },
     };
     try {

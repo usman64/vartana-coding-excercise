@@ -1,5 +1,5 @@
 import React from "react";
-import { IncomeFormComponents } from "../FORM COMPONENTS/utils";
+import { IncomeFormComponents } from "../FORM-COMPONENTS/form-components";
 
 const CurrentIncomeForm = ({ currentFormEditing }) => {
   let CurrentForm =
